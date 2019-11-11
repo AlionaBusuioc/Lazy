@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <style>
+        #align{
+            text-align: justify;
+        }
+        .photo{
+            display: block;
+             margin-left: auto;
+             margin-right: auto;
+             width: 600px;
+             height: 500px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <h1>LazyLoading</h1>
+        <p id="align">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam voluptates eaque fuga incidunt, neque obcaecati perspiciatis architecto adipisci eum impedit nobis reiciendis, eos sed unde nemo inventore est nihil illum exercitationem harum eius sunt? Laboriosam repudiandae pariatur eaque minus, aperiam quis sapiente commodi incidunt eum, dolorem corrupti excepturi magni necessitatibus sit, dolorum tempora! Enim id numquam molestias vero laudantium. Quibusdam, quae, sed nisi similique eos ratione rerum voluptas illo qui laudantium mollitia, obcaecati sequi reiciendis. Corrupti maxime id voluptatibus vitae ipsa, asperiores mollitia ratione eos iure quis doloribus quibusdam molestiae, ex sed alias repellendus nobis illum doloremque, maiores ullam aliquam reprehenderit dolores esse? Fugiat id, ad ipsum qui dicta autem accusantium minus nemo ea eaque ipsa recusandae natus mollitia rem sunt, alias dolor animi quod soluta laudantium voluptas corrupti! Sed doloribus quaerat amet repellat, voluptates doloremque consequatur impedit provident minima, numquam mollitia praesentium laboriosam eveniet rerum unde maxime labore magni modi deserunt reprehenderit eius culpa ad quis soluta. Impedit eveniet debitis perspiciatis quibusdam et accusantium qui quisquam cumque deleniti aut totam esse ullam nihil quia quasi quaerat autem hic harum ipsum, quam, reprehenderit maiores! Quidem beatae delectus, harum ullam sit esse ex. Aut autem tempore consequuntur maxime error atque. Magni recusandae doloribus eum mollitia aspernatur debitis quibusdam at, nulla tempora provident ad harum eius fugit, voluptatem incidunt aliquam iste ipsum totam voluptatum sed pariatur cupiditate eaque. Recusandae distinctio, necessitatibus pariatur reiciendis quae exercitationem corrupti nulla molestiae, eius nostrum doloribus, cum dignissimos suscipit ducimus incidunt quod quia praesentium? Iusto, fuga consequatur!</p>
+    </div>
+    <div class="image-wrapper">
+        <img class="photo" src="https://images.unsplash.com/photo-1518117823675-9a4bb23df61c?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80"/>
+    </div>
+    <div class="image-wrapper">
+        <img class="photo" data-src="https://www.kensington.com/siteassets/blog/2019/05-may/how-office-temperature-affects-productivity-and-state-of-well-being-header.jpg?width=1000&height=667"/>
+    </div>
+    <div class="image-wrapper">
+        <img class="photo" data-src="https://i0.wp.com/blog.eoffice.net/wp-content/uploads/2019/03/2_.jpg?resize=1024%2C683&ssl=1"/>
+    </div>
+    <div class="image-wrapper">
+        <img class="photo" data-src="https://i2.wp.com/www10.aeccafe.com/blogs/arch-showcase/files/2018/02/41465-preview_low_1195-1_41465_sc_v2com.jpg?resize=600%2C400&ssl=1"/>
+    </div>
+    <div class="image-wrapper">
+        <img class="photo" data-src="https://images.unsplash.com/photo-1498049860654-af1a5c566876?ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80"/>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@12.3.0/dist/lazyload.min.js"></script>
+<script>
+    const myLazyLoad = new LazyLoad({
+        elements_selector: ".photo"
+    });
+</script>
+</body>
+</html>
